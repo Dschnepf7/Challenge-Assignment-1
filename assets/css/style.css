@@ -15,31 +15,33 @@ header {
     color: #ffffff;
 }
 
-header h1 .seo {
+header h1{
     display: inline-block;
     font-size: 48px;
-    color:#d9dcd6;
+}
+/* removed unnecessary parent-child tag selectors: header h1 */
+.seo {
+    color: #d9dcd6;
 }
 
-/* removed redundant css for header h1 .seo and combined into one code block */
-
-.header div {
+header div {
     padding-top: 15px;
     margin-right: 20px;
     float: right;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
+    color: #d9dcd6;
 }
-/* changed .header id to header tag to reflect semantic element change in HTML. */
-/* added text-align to fix issue where ul defaulted to left side of header. */
-header div ul li {
+
+header div ul {
     list-style-type: none;
-    text-align: right;
+}
+
+/* removed unnessecary parent child selectors: header,div,ul */
+li {
     display: inline-block;
     margin-left: 25px;
-    
 }
-/* removed redundant code and combined into header div ul li css section */
 
 a {
     color: #ffffff;
@@ -52,7 +54,7 @@ p {
 
 .hero {
     height: 800px;
-    width: 100%;
+    width: 100%; 
     margin-bottom: 25px;
     background-image: url("../images/digital-marketing-meeting.jpg");
     background-size: cover;
@@ -74,7 +76,7 @@ p {
     display: inline-block;
     margin-left: 20px;
 }
-
+/* added color:white to .benefits, removed it from all other benefits sub-classes: lead, brand, cost, etc. */
 .benefits {
     margin-right: 20px;
     padding: 20px;
@@ -84,74 +86,32 @@ p {
     height: 100%;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #2589bd;
+    color: white;
 }
-
-.benefit-lead {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-.benefit-brand {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
+/* combined benefit id's into one code block to reduce unnecessary lines */
+.benefit-lead,
+.benefit-brand,
 .benefit-cost {
     margin-bottom: 32px;
-    color: #ffffff;
 }
-
-.benefit-lead h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-brand h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
+/* combined benefit h3 id's into one code block to reduce unnessecary lines */
+.benefit-lead h3,
+.benefit-brand h3,
 .benefit-cost h3 {
     margin-bottom: 10px;
     text-align: center;
 }
-
-.benefit-lead img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-.benefit-brand img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
+/* combined .benifit images format into to one code block */
+.benefit-lead img,
+.benefit-brand img,
 .benefit-cost img {
     display: block;
     margin: 10px auto;
     max-width: 150px;
 }
-
-.search-engine-optimization {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.online-reputation-management {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
+/* combined below 3 id's formatting to one code block */
+.search-engine-optimization,
+.online-reputation-management,
 .social-media-marketing {
     margin-bottom: 20px;
     padding: 50px;
@@ -160,29 +120,15 @@ p {
     background-color: #0072bb;
     color: #ffffff;
 }
-
-.search-engine-optimization img {
-    max-height: 200px;
-}
-
-.online-reputation-management img {
-    max-height: 200px;
-}
-
+/* combined img css into one code block */
+.search-engine-optimization img,
+.online-reputation-management img,
 .social-media-marketing img {
     max-height: 200px;
 }
-
-.search-engine-optimization h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-.online-reputation-management h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
+/* combined h2 formatting for each id into one code block */
+.search-engine-optimization h2,
+.online-reputation-management h2,
 .social-media-marketing h2 {
     margin-bottom: 20px;
     font-size: 36px;
@@ -195,6 +141,6 @@ p {
     text-align: center;
 }
 
-.footer h2{
+.footer h2 {
     font-size: 20px;
 }
