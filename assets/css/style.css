@@ -15,14 +15,13 @@ header {
     color: #ffffff;
 }
 
-header h1 {
+header h1 .seo {
     display: inline-block;
     font-size: 48px;
+    color:#d9dcd6;
 }
 
-header h1 .seo {
-    color: #d9dcd6;
-}
+/* removed redundant css for header h1 .seo and combined into one code block */
 
 .header div {
     padding-top: 15px;
@@ -33,17 +32,14 @@ header h1 .seo {
 }
 /* changed .header id to header tag to reflect semantic element change in HTML. */
 /* added text-align to fix issue where ul defaulted to left side of header. */
-header div ul {
+header div ul li {
     list-style-type: none;
     text-align: right;
-    
-}
-
-header div ul li {
     display: inline-block;
     margin-left: 25px;
     
 }
+/* removed redundant code and combined into header div ul li css section */
 
 a {
     color: #ffffff;
@@ -199,6 +195,6 @@ p {
     text-align: center;
 }
 
-.footer h2 {
+.footer h2{
     font-size: 20px;
 }
